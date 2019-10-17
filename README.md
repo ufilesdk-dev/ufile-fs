@@ -26,6 +26,3 @@ ufile对应的文件系统, 可以挂载bucket到一个文件系统上使用
 ## 卸载UFile存储空间(或者说关闭程序)
 * sudo umount ${your_local_mount_dir}
 
-## 性能数据
-* 写入吞吐量在140MB/s左右
-
