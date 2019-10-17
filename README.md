@@ -14,7 +14,7 @@ ufile对应的文件系统, 可以挂载bucket到一个文件系统上使用
   aws_access_key_id = TOKEN_*****9206d
   aws_secret_access_key = 93614*******b1dc40
   ```
-* 执行挂载命令 ./goofys  --endpoint your_ufile_endpoint your_bucket your_local_mount_dir, 例如: ./goofys  --endpoint http://internal.s3-cn-bj.ufileos.com suning2  ./mount_test
+* 执行挂载命令 ./ufile-fs  --endpoint your_ufile_endpoint your_bucket your_local_mount_dir, 例如: ./ufile-fs  --endpoint http://internal.s3-cn-bj.ufileos.com suning2  ./mount_test
 * 测试挂载是否成功, 可以拷贝一个本地文件到your_local_mount_dir目录, 看是否上传到ufile
 
 ## 文件上传和下载和删除
