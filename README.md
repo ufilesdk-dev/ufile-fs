@@ -14,17 +14,17 @@ ufile-fs 可以把 ufile 挂载到本地，当做文件系统来访问。
   aws_access_key_id = TOKEN_*****9206d
   aws_secret_access_key = 93614*******b1dc40
   ```
-* 执行挂载命令 ./ufile-fs  --endpoint bucket_domain(可查看下面小节bucket_domain分布) bucket local_mount_dir, 例如: ./ufile-fs  --endpoint http://internal.s3-cn-bj.ufileos.com suning2  ./mount_test
+* 执行挂载命令 ```./ufile-fs  --endpoint bucket_domain bucket local_mount_dir``` (可查看下面小节bucket_domain分布), 例如: ```./ufile-fs  --endpoint http://internal.s3-cn-bj.ufileos.com suning2  ./mount_test```
 * 测试挂载是否成功, 可以拷贝一个本地文件到${local_mount_dir}目录, 看是否上传到ufile
 
 ## 文件上传和下载和删除
  挂载UFile存储空间和后，可以像使用本地文件夹一样使用UFile存储空间。
-* 拷贝文件到${your_local_mount_dir} ，即是上传文件。
-* 将文件从${your_local_mount_dir}拷贝到其他路径，即下载文件。
-* 将文件从${your_local_mount_dir}删除掉，则UFile存储空间中，该文件也被删除掉。
+* 拷贝文件到${local_mount_dir} ，即是上传文件。
+* 将文件从${local_mount_dir}拷贝到其他路径，即下载文件。
+* 将文件从${local_mount_dir}删除掉，则UFile存储空间中，该文件也被删除掉。
 
 ## 卸载UFile存储空间(或者说关闭程序)
-* sudo umount ${your_local_mount_dir}
+* ```sudo umount ${your_local_mount_dir}```
 
 ## bucket_domain分布
 * 北京二:
