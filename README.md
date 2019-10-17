@@ -5,8 +5,8 @@ ufile对应的文件系统, 可以挂载bucket到一个文件系统上使用
 * 操作系统: linux or mac, x86-64位操作系统
 
 ## 安装步骤
-* 如果是liux则下载文件 TARGET:
-* 如果是mac上下载文件 TARGET:
+* 如果是linux则下载文件 [TARGET](https://github.com/ufilesdk-dev/ufile-fs/releases/download/0.21.0/ufile-fs-linux.tar.gz)
+* 如果是mac上下载文件 [TARGET](https://github.com/ufilesdk-dev/ufile-fs/releases/download/0.21.0/ufile-fs-mac.tar.gz)
 * 解压 tar -xzvf ${TARGET} 到指定目录
 * 默认在$HOME/.aws/credentials文件里面配置bucket的公私钥,格式如下
   ```
@@ -23,7 +23,7 @@ ufile对应的文件系统, 可以挂载bucket到一个文件系统上使用
 * 将文件从${your_local_mount_dir}拷贝到其他路径，即下载文件。
 * 将文件从${your_local_mount_dir}删除掉，则UFile存储空间中，该文件也被删除掉。
 
-## 卸载UFile存储空间(关闭程序)
+## 卸载UFile存储空间(或者说关闭程序)
 * sudo umount ${your_local_mount_dir}
 
 ## 性能数据
