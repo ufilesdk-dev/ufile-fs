@@ -1,5 +1,5 @@
 # ufile-fs
-ufile对应的文件系统, 可以挂载bucket到一个文件系统上使用
+ufile-fs 可以把 ufile 挂载到本地，当做文件系统来访问。
 
 ## 使用环境
 * 操作系统: linux or mac, x86-64位操作系统
@@ -14,8 +14,8 @@ ufile对应的文件系统, 可以挂载bucket到一个文件系统上使用
   aws_access_key_id = TOKEN_*****9206d
   aws_secret_access_key = 93614*******b1dc40
   ```
-* 执行挂载命令 ./ufile-fs  --endpoint your_ufile_endpoint your_bucket your_local_mount_dir, 例如: ./ufile-fs  --endpoint http://internal.s3-cn-bj.ufileos.com suning2  ./mount_test
-* 测试挂载是否成功, 可以拷贝一个本地文件到your_local_mount_dir目录, 看是否上传到ufile
+* 执行挂载命令 ./ufile-fs  --endpoint bucket_domain(可查看下面小节bucket_domain分布) bucket local_mount_dir, 例如: ./ufile-fs  --endpoint http://internal.s3-cn-bj.ufileos.com suning2  ./mount_test
+* 测试挂载是否成功, 可以拷贝一个本地文件到${local_mount_dir}目录, 看是否上传到ufile
 
 ## 文件上传和下载和删除
  挂载UFile存储空间和后，可以像使用本地文件夹一样使用UFile存储空间。
@@ -26,3 +26,29 @@ ufile对应的文件系统, 可以挂载bucket到一个文件系统上使用
 ## 卸载UFile存储空间(或者说关闭程序)
 * sudo umount ${your_local_mount_dir}
 
+## bucket_domain分布
+北京二:
+外网: s3-cn-bj.ufileos.com
+内网: internal.s3-cn-bj.ufileos.com
+
+上海:
+外网: s3-cn-sh2.ufileos.com
+内网: internal.s3-cn-sh2.ufileos.com
+
+海康威视专区:
+外网: division.s3-cn-bj.ufileos.com
+内网: internal.division.s3-cn-bj.ufileos.com
+
+尼日利亚
+外网: s3-afr-nigeria.ufileos.com
+内网: internal.s3-afr-nigeria.ufileos.com
+
+浪潮2
+外网: s3.infile.inspurcloud.cn
+内网: s3-internal.infile.inspurcloud.cn
+
+越南
+外网: s3-vn-sng.ufileos.com
+内网: internal.s3-vn-sng.ufileos.com
+
+注意: 目前北京二地域已经支持https协议，其他地域后续支持
