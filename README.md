@@ -27,9 +27,9 @@ ufile-fs 可以把 ufile 挂载到本地，当做文件系统来访问。
 * sudo umount ${your_local_mount_dir}
 
 ## bucket_domain分布
-北京二:
-外网: s3-cn-bj.ufileos.com
-内网: internal.s3-cn-bj.ufileos.com
+* 北京二:
+  * 外网: s3-cn-bj.ufileos.com
+  * 内网: internal.s3-cn-bj.ufileos.com
 
 上海:
 外网: s3-cn-sh2.ufileos.com
