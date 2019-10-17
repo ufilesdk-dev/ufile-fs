@@ -31,24 +31,24 @@ ufile-fs 可以把 ufile 挂载到本地，当做文件系统来访问。
   * 外网: s3-cn-bj.ufileos.com
   * 内网: internal.s3-cn-bj.ufileos.com
 
-上海:
-外网: s3-cn-sh2.ufileos.com
-内网: internal.s3-cn-sh2.ufileos.com
+* 上海:
+  * 外网: s3-cn-sh2.ufileos.com
+  * 内网: internal.s3-cn-sh2.ufileos.com
 
-海康威视专区:
-外网: division.s3-cn-bj.ufileos.com
-内网: internal.division.s3-cn-bj.ufileos.com
+* 海康威视专区:
+  * 外网: division.s3-cn-bj.ufileos.com
+  * 内网: internal.division.s3-cn-bj.ufileos.com
 
-尼日利亚
-外网: s3-afr-nigeria.ufileos.com
-内网: internal.s3-afr-nigeria.ufileos.com
+* 尼日利亚
+  * 外网: s3-afr-nigeria.ufileos.com
+  * 内网: internal.s3-afr-nigeria.ufileos.com
 
-浪潮2
-外网: s3.infile.inspurcloud.cn
-内网: s3-internal.infile.inspurcloud.cn
+* 浪潮2
+  * 外网: s3.infile.inspurcloud.cn
+  * 内网: s3-internal.infile.inspurcloud.cn
 
-越南
-外网: s3-vn-sng.ufileos.com
-内网: internal.s3-vn-sng.ufileos.com
+* 越南
+  * 外网: s3-vn-sng.ufileos.com
+  * 内网: internal.s3-vn-sng.ufileos.com
 
 注意: 目前北京二地域已经支持https协议，其他地域后续支持
