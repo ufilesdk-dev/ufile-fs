@@ -5,8 +5,8 @@ ufile-fs 可以把 ufile 挂载到本地，当做文件系统来访问。
 * 操作系统: linux or mac, x86-64位操作系统
 
 ## 安装步骤
-* 如果是linux则下载文件 [TARGET](https://github.com/ufilesdk-dev/ufile-fs/releases/download/v0.21.0/ufile-fs-linux.tar.gz)
-* 如果是mac上下载文件 [TARGET](https://github.com/ufilesdk-dev/ufile-fs/releases/download/v0.21.0/ufile-fs-mac.tar.gz)
+* 如果是linux则下载文件 [TARGET](https://github.com/ufilesdk-dev/ufile-fs/releases/download/v0.21.1/ufile-fs-linux.tar.gz)
+* 如果是mac上下载文件 [TARGET](https://github.com/ufilesdk-dev/ufile-fs/releases/download/v0.21.1/ufile-fs-mac.tar.gz)
 * 解压 tar -xzvf ${TARGET} 到指定目录
 * 默认在$HOME/.aws/credentials文件里面配置bucket的公私钥,格式如下
   ```
